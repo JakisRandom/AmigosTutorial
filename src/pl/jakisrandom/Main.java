@@ -2,9 +2,16 @@ package pl.jakisrandom;
 
 public class Main {
     public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.name = "Frumpkin";
+        cat.meow();
+    }
 
-        System.out.println("Hello world!");
-        System.out.println(10 + 10);
-        System.out.println("jo dupia");
+    static class Cat {
+        String name;
+
+        void meow() {
+            System.out.println(name + ":meow...");
+        }
     }
 }
